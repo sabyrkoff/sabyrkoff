@@ -5,8 +5,7 @@ import '@/index.css'
 
 const savedTheme = window.localStorage.getItem('sabyrkoff-theme')
 document.documentElement.dataset.theme = savedTheme === 'light' ? 'light' : 'dark'
-const savedLanguage = window.localStorage.getItem('sabyrkoff-language')
-document.documentElement.lang = savedLanguage === 'ru' ? 'ru' : 'en'
+document.documentElement.lang = 'en'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
