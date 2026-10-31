@@ -1,3 +1,5 @@
+import { Header } from '@/components/Header'
+
 export const App = () => {
-  return <h1>bla-bla</h1>
+  return <Header />
 }
