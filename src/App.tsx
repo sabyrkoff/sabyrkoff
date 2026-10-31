@@ -1,4 +1,5 @@
 import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 import { Hero } from '@/components/Hero'
 
 export const App = () => {
@@ -8,6 +9,7 @@ export const App = () => {
       <main>
         <Hero />
       </main>
+      <Footer />
     </>
   )
 }
