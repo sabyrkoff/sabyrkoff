@@ -50,7 +50,7 @@
 .tagline {
   margin-top: 14px;
   color: color-mix(in srgb, var(--color-text) 82%, var(--color-muted));
-  font-size: 0.66em;
+  font-size: 0.652em;
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 0.94;
@@ -181,41 +181,52 @@
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 420px) {
   .hero {
     padding-inline: 16px;
     padding-bottom: 16px;
   }
 
   .role {
-    margin-bottom: 24px;
-    font-size: 15px;
+    margin-bottom: 16px;
+    font-size: 16px;
   }
 
   .title {
-    font-size: clamp(3rem, 12.5vw, 3.7rem);
+    width: 100%;
+    font-size: clamp(2.75rem, 12vw, 3.3rem);
   }
 
   .tagline {
-    font-size: 0.68em;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 0.64em;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    white-space: normal;
   }
 
   .subline {
-    margin-top: 24px;
-    font-size: 12px;
+    margin-top: 20px;
+    font-size: 14px;
   }
 
   .actions {
-    min-height: 44px;
-    margin-top: 26px;
+    margin-top: 24px;
   }
 
   .actionLink {
     min-height: 44px;
+    padding-inline: 18px;
+    font-size: 14px;
+  }
+
+  .actionIcon {
+    width: 20px;
+    height: 20px;
   }
 
   .portraitCard {
-    border-radius: 22px;
+    border-radius: 20px;
   }
-
 }
