@@ -1,5 +1,13 @@
 import { Header } from '@/components/Header'
+import { Hero } from '@/components/Hero'
 
 export const App = () => {
-  return <Header />
+  return (
+    <>
+      <Header />
+      <main>
+        <Hero />
+      </main>
+    </>
+  )
 }

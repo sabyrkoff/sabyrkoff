@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family);
   color: var(--color-text);
   background: var(--color-page);
   color-scheme: dark;
@@ -14,7 +16,7 @@
   --color-border: #48484f;
   --color-accent: #c9f83d;
   --color-control-bg: rgb(255 255 255 / 2%);
-  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-family: 'Outfit', Arial, Helvetica, sans-serif;
 }
 
 :root[data-theme='light'] {
@@ -38,7 +40,6 @@ body {
   margin: 0;
   color: var(--color-text);
   background: var(--color-page);
-  transition:
-    color 180ms ease,
-    background-color 180ms ease;
+  transition: color 180ms ease,
+  background-color 180ms ease;
 }

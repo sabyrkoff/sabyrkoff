@@ -40,6 +40,8 @@ export const Header = () => {
         <a className={styles.logo} href="/" aria-label="SZ home">
           SZ<span className={styles.logoDot}>.</span>
         </a>
+        <span className={styles.identityDivider} aria-hidden="true">|</span>
+        <span className={styles.profession}>Full-Stack Engineer</span>
       </div>
 
       <div className={styles.controls}>
