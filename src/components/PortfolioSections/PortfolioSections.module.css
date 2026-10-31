@@ -1,375 +1,108 @@
 .sections {
   display: grid;
-  grid-template-columns: minmax(0, 2.42fr) minmax(0, 1.93fr) minmax(0, 1fr);
-  grid-template-rows: repeat(2, minmax(185px, 1fr));
-  gap: 12px;
-  width: min(100%, 1600px);
-  min-height: 440px;
-  margin: 0 auto 24px;
-  padding-inline: clamp(20px, 2.6vw, 40px);
+  grid-template-columns: minmax(0, 2.35fr) minmax(250px, 1fr);
+  gap: 20px;
+  width: min(100%, 1440px);
+  margin: 0 auto;
+  padding: 0 clamp(20px, 2.6vw, 40px) 32px;
 }
 
-.aboutCard,
-.currentlyCard,
-.elsewhereCard,
-.contactCard {
+.currentlyCard, .contactCard {
   position: relative;
+  min-height: 220px;
   overflow: hidden;
-  border-radius: 28px;
-}
-
-.eyebrow {
-  position: relative;
-  z-index: 2;
-  margin: 0;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  line-height: 1.3;
-  text-transform: uppercase;
-}
-
-.aboutCard {
-  grid-row: 1 / span 2;
-  padding: 38px 32px 30px;
-  color: #111114;
-  background: #f0ebe1;
-}
-
-.aboutArtwork {
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.aboutContent {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 100%;
-}
-
-.aboutTitle {
-  margin: 24px 0 20px;
-  font-size: clamp(30px, 3.1vw, 40px);
-  font-weight: 600;
-  letter-spacing: -0.035em;
-  line-height: 1.03;
-}
-
-.aboutTitle span {
-  color: #315cff;
-}
-
-.aboutDescription {
-  max-width: 340px;
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.42;
-}
-
-.learnMore {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: auto;
-  color: inherit;
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.learnMore span {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1;
-  transition: transform 160ms ease;
-}
-
-.learnMore:hover span {
-  transform: translate(3px, -3px);
+  border-radius: 26px;
 }
 
 .currentlyCard {
-  grid-column: 2 / span 2;
-  padding: 26px 28px;
-  border: 1px solid var(--color-border);
-  color: var(--color-text);
-  background: linear-gradient(120deg, #1c1c1f, #111113);
+  padding: clamp(28px, 4.5vw, 42px);
+  color: white;
+  background: linear-gradient(125deg, #9b70f6, #783cf0);
 }
-
-.currentlyText {
+.currentlyCard h2, .contactCard h2 {
   position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  width: 58%;
-  margin: 16px 0 0;
-  font-size: clamp(26px, 3vw, 38px);
-  font-weight: 500;
+  z-index: 1;
+  margin: 0 0 22px;
+  font-size: 32px;
+  font-weight: 550;
   letter-spacing: -0.04em;
-  line-height: 1.05;
 }
-
-.building {
-  color: var(--color-accent);
-  font-weight: 700;
-}
-
-.sparkle {
-  position: absolute;
-  top: 26px;
-  left: 49%;
-  color: var(--color-text);
-  font-size: 38px;
-  font-weight: 200;
-  line-height: 1;
-}
-
-.globe {
-  position: absolute;
-  top: 50%;
-  right: 3%;
-  width: 44%;
-  height: 94%;
-  color: rgb(150 150 160 / 55%);
-  transform: translateY(-50%) rotate(-8deg);
-}
-
-.elsewhereCard {
-  grid-column: 2;
-  padding: 26px 28px;
-  border: 1px solid var(--color-border);
-  color: var(--color-text);
-  background: linear-gradient(120deg, #171719, #101012);
-}
-
-.githubLink {
+.currentlyCard p {
   position: relative;
-  z-index: 2;
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  margin-top: 22px;
-  color: var(--color-text);
-  font-size: clamp(28px, 3vw, 38px);
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1;
-  text-decoration: none;
+  z-index: 1;
+  max-width: 580px;
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 1.55;
 }
-
-.githubLink span {
-  font-size: 0.88em;
-  font-weight: 400;
-  transition: transform 160ms ease;
-}
-
-.githubLink:hover span {
-  transform: translate(3px, -3px);
-}
-
-.elsewhereDescription {
-  position: relative;
-  z-index: 2;
-  max-width: 220px;
-  margin: 16px 0 0;
-  color: var(--color-muted);
-  font-size: 14px;
-  line-height: 1.45;
-}
-
-.pixels {
+.shapes span {
   position: absolute;
-  top: 18px;
-  right: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 12px);
-  grid-auto-rows: 12px;
-  gap: 5px;
-  width: 63px;
-  opacity: 0.42;
-  transform: rotate(-2deg);
+  right: -10px;
+  bottom: -65px;
+  width: 210px;
+  height: 230px;
+  border-radius: 38px;
+  background: rgb(255 255 255 / 14%);
+  transform: rotate(13deg);
 }
-
-.pixels span {
-  width: 12px;
-  height: 12px;
-  background: #77777e;
-  opacity: 0;
-}
-
-.pixels span:nth-child(1),
-.pixels span:nth-child(4),
-.pixels span:nth-child(6),
-.pixels span:nth-child(7),
-.pixels span:nth-child(9),
-.pixels span:nth-child(10),
-.pixels span:nth-child(13),
-.pixels span:nth-child(16),
-.pixels span:nth-child(18) {
-  opacity: 1;
+.shapes span + span {
+  right: 50px;
+  bottom: -125px;
+  width: 200px;
+  height: 240px;
+  background: rgb(255 255 255 / 20%);
+  transform: rotate(-8deg);
 }
 
 .contactCard {
-  grid-column: 3;
-  padding: 26px 24px;
-  color: #111114;
-  background: var(--color-accent);
+  display: flex;
+  flex-direction: column;
+  padding: 34px;
+  color: white;
+  background: linear-gradient(145deg, #ff932f, #f15b0b);
 }
-
-:global(:root[data-theme='light']) .contactCard {
-  color: #f7f7fb;
-}
-
-.contactTitle {
+.contactCard h2 { font-size: 27px; }
+.contactDescription {
   position: relative;
   z-index: 1;
-  margin: 14px 0 0;
-  font-size: clamp(23px, 2.4vw, 30px);
-  font-weight: 600;
-  letter-spacing: -0.06em;
-  line-height: 0.98;
-  white-space: nowrap;
+  max-width: 300px;
+  margin: 0;
+  color: rgb(255 255 255 / 90%);
+  font-size: 15px;
+  line-height: 1.5;
 }
-
-.contactArrow {
-  display: inline-block;
-  margin-left: 4px;
-  font-size: 0.8em;
-  line-height: 1;
-  vertical-align: 0.08em;
-}
-
-.contactIcons {
-  position: absolute;
-  right: 22px;
-  bottom: 20px;
-  left: 24px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.contactIcons > span {
+.emailButton {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
-  width: 20px;
-  height: 20px;
-  color: inherit;
+  align-items: center;
+  align-self: flex-start;
+  min-height: 42px;
+  margin-top: 10px;
+  padding: 0 16px;
+  border-radius: 999px;
+  color: white;
+  background: rgb(255 255 255 / 20%);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 160ms ease, transform 160ms ease;
 }
+.emailButton:hover { background: rgb(255 255 255 / 30%); transform: translateY(-1px); }
+.emailButton:focus-visible { outline: 2px solid white; outline-offset: 3px; }
 
-.contactIcons img {
-  display: block;
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
+@media (max-width: 760px) {
+  .sections { grid-template-columns: minmax(0, 1.7fr) minmax(220px, 0.9fr); gap: 14px; }
+  .currentlyCard, .contactCard { min-height: 210px; border-radius: 22px; }
+  .currentlyCard { padding: 26px; }
+  .contactCard { padding: 26px; }
 }
-
-@media (max-width: 980px) {
-  .sections {
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1.6fr) minmax(0, 1fr);
-  }
-
-  .aboutCard {
-    padding: 30px 24px 24px;
-  }
-
-  .currentlyCard,
-  .elsewhereCard {
-    padding-inline: 22px;
-  }
-
-  .contactCard {
-    padding-inline: 18px;
-  }
+@media (max-width: 600px) {
+  .sections { grid-template-columns: minmax(0, 1fr); padding-inline: 16px; }
+  .currentlyCard { min-height: 240px; }
+  .contactCard { min-height: 190px; }
 }
-
-@media (max-width: 720px) {
-  .sections {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: auto;
-  }
-
-  .aboutCard,
-  .currentlyCard {
-    grid-column: 1 / -1;
-  }
-
-  .aboutCard {
-    grid-row: auto;
-    min-height: 360px;
-  }
-
-  .currentlyCard {
-    min-height: 200px;
-  }
-
-  .elsewhereCard,
-  .contactCard {
-    grid-column: auto;
-    min-height: 190px;
-  }
-}
-
-@media (max-width: 420px) {
-  .sections {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 10px;
-    padding-inline: 16px;
-  }
-
-  .aboutCard {
-    min-height: 340px;
-    padding: 28px 22px 24px;
-  }
-
-  .aboutTitle {
-    margin-top: 20px;
-    font-size: clamp(28px, 8vw, 34px);
-  }
-
-  .aboutDescription {
-    max-width: 270px;
-    font-size: 15px;
-  }
-
-  .currentlyCard {
-    min-height: 200px;
-    padding: 22px;
-  }
-
-  .currentlyText {
-    width: 68%;
-    font-size: 28px;
-  }
-
-  .sparkle {
-    top: 22px;
-    left: 62%;
-  }
-
-  .globe {
-    right: -8%;
-    width: 48%;
-  }
-
-  .elsewhereCard,
-  .contactCard {
-    min-height: 190px;
-    padding: 22px;
-  }
-
-  .githubLink {
-    margin-top: 18px;
-  }
-
-  .contactIcons {
-    left: 22px;
-  }
+@media (max-width: 390px) {
+  .currentlyCard, .contactCard { padding: 22px; }
+  .currentlyCard h2 { font-size: 29px; }
 }
