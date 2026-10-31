@@ -37,8 +37,8 @@ export const PortfolioSections = () => {
             and engineering.
           </h2>
           <p className={styles.aboutDescription}>
-            I’m Sabyrzhan — a software engineer, UI designer and curious mind. I love turning ideas
-            into beautiful and functional products.
+            I’m Sabyrzhan, a Full-Stack Engineer focused on building reliable, useful products from
+            front to back.
           </p>
           <a className={styles.learnMore} href="#about">
             Learn more <span aria-hidden="true">↗</span>
